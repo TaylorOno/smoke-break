@@ -32,4 +32,4 @@ echo -e "host\n$HOST_A\n$HOST_B" > "$tmpHosts"
 tmpCollection=$(mktemp)
 jq '.item[].request.url.host = ["{{host}}"]' "tests/$COLLECTION.postman_collection.json" > "$tmpCollection"
 
-newman run "$tmpCollection" --iteration-data "$tmpHosts" --delay-request
+newman run "$tmpCollection" --iteration-data "$tmpHosts" -r smoke-break

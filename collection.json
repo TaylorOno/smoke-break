@@ -1,0 +1,50 @@
+{
+  "info": {
+    "_postman_id": "49b68b11-3982-4988-bea7-cdd48982a1f8",
+    "name": "Quote",
+    "description": "breaking bad quote",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Quote",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://breaking-bad-quotes.herokuapp.com/v1/quotes",
+          "protocol": "https",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "v1",
+            "quotes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get 5 Quotes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://breaking-bad-quotes.herokuapp.com/v1/quotes/5",
+          "protocol": "https",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "v1",
+            "quotes",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
